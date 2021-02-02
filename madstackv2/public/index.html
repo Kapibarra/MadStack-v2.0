@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Document</title>
+    <style type="text/css">
+        .loader {
+            display: flex;
+            flex-direction: row nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(21, 21, 21, 1);
+        }
+        
+        .circulls {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            stroke-linecap: round;
+        }
+        
+        circle {
+            fill: none;
+            /* stroke-width: 6.5; */
+            stroke-dasharray: 200px;
+            animation: spinner 3s ease infinite;
+            -webkit-animation: spinner 3s ease infinite;
+            transform-origin: 360px 360px;
+            -webkit-transform-origin: 180px 180px;
+            will-change: transform;
+        }
+        
+        circle:nth-child(1) {
+            stroke-dasharray: 357px;
+            animation-delay: 2.9s;
+            stroke-width: 6;
+        }
+        
+        circle:nth-child(2) {
+            stroke-dasharray: 336px;
+            animation-delay: 2.9s;
+            stroke-width: 3;
+        }
+        
+        circle:nth-child(3) {
+            stroke-dasharray: 315px;
+            animation-delay: 2.9s;
+            stroke-width: 3;
+        }
+        
+        circle:nth-child(4) {
+            stroke-dasharray: 294px;
+            animation-delay: 2.5s;
+            stroke-width: 2;
+        }
+        
+        circle:nth-child(5) {
+            stroke-dasharray: 273px;
+            animation-delay: 2.5s;
+            stroke-width: 2;
+        }
+        
+        circle:nth-child(6) {
+            stroke-dasharray: 252px;
+            animation-delay: 2.3s;
+            stroke-width: 4;
+        }
+        
+        circle:nth-child(7) {
+            stroke-dasharray: 231px;
+            animation-delay: 2.3s;
+            stroke-width: 8;
+        }
+        
+        circle:nth-child(8) {
+            stroke-dasharray: 210px;
+            animation-delay: 2.0s;
+            stroke-width: 1;
+        }
+        
+        circle:nth-child(9) {
+            stroke-dasharray: 189px;
+            animation-delay: 2.0s;
+            stroke-width: 1;
+        }
+        
+        circle:nth-child(10) {
+            stroke-dasharray: 168px;
+            animation-delay: 2.9s;
+            stroke-width: 5;
+        }
+        
+        circle:nth-child(11) {
+            stroke-dasharray: 147px;
+            animation-delay: 2.9s;
+            stroke-width: 5;
+        }
+        
+        circle:nth-child(12) {
+            stroke-dasharray: 126px;
+            animation-delay: 2.9s;
+            stroke-width: 5;
+        }
+        
+        circle:nth-child(13) {
+            stroke-dasharray: 105px;
+            animation-delay: 2.7s;
+            stroke-width: 6;
+        }
+        
+        circle:nth-child(14) {
+            stroke-dasharray: 84px;
+            animation-delay: 2.6s;
+            stroke-width: 4;
+        }
+        
+        circle:nth-child(15) {
+            stroke-dasharray: 63px;
+            animation-delay: 2.5s;
+            stroke-width: 4;
+        }
+        
+        circle:nth-child(16) {
+            stroke-dasharray: 42px;
+            animation-delay: 2.4s;
+            stroke-width: 4;
+        }
+        
+        circle:nth-child(17) {
+            stroke-dasharray: 10px;
+            animation-delay: 2.1s;
+            stroke-width: 2;
+        }
+        
+        @keyframes spinner {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @-webkit-keyframes spinner {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <svg class="circulls" xmls="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
+  <circle cx="180" cy="180" r="170" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="160" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="150" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="140" stroke="rgb(205,127,50)"/>
+  <circle cx="180" cy="180" r="130" stroke="rgb(205,127,50)"/>
+  <circle cx="180" cy="180" r="120" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="110" stroke="rgb(205,127,50)"/>
+  <circle cx="180" cy="180" r="100" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="90" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="80" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="70" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="60" stroke="rgb(255,255,255)"/>
+  <!— <circle cx="180" cy="180" r="50" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="40" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="30" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="20" stroke="rgb(255,255,255)"/>
+  <circle cx="180" cy="180" r="10" stroke="rgb(255,255,255)"/> —>
+  </svg>
+    </div>
+</body>
+
+</html>
+
+</html>
