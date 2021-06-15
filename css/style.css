@@ -1789,6 +1789,16 @@ body>header>nav>div.phone:after {
     margin-right: -25px;
 }
 
+.row-blog {
+    display: block;
+}
+
+.development {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+}
+
 .recent-news .col-lg-4 {
     padding-left: 25px;
     padding-right: 25px;
