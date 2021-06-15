@@ -1083,13 +1083,13 @@ moe .color-dark .left-side ul li a:hover {
     transition: all 0s ease;
 }
 
-body > header > nav > div.phone:hover:before {
+body>header>nav>div.phone:hover:before {
     width: 100%;
     background: #282828;
     transition: width 0.25s ease;
 }
 
-body > header > nav > div.phone:after {
+body>header>nav>div.phone:after {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
@@ -1549,7 +1549,7 @@ body > header > nav > div.phone:after {
 }
 
 .main-services figure img {
-    height: 60px;
+    height: 400px;
     display: inline-block;
 }
 
@@ -3095,9 +3095,26 @@ only screen and (max-device-width: 767px) {
         margin-bottom: 15px;
     }
 }
-.color-undefined .swoosh:before {content: "_";color: #E50914;}
-.left-side .swoosh:before {content: "_";color: #E50914;}
-.color-dark section[data-color="dark"] .swoosh:before {content: "_";color: #E50914;}
-.color-undefined section[data-color="dark"] .swoosh:before {content: "_";color: #fff;}
+
+.color-undefined .swoosh:before {
+    content: "_";
+    color: #E50914;
+}
+
+.left-side .swoosh:before {
+    content: "_";
+    color: #E50914;
+}
+
+.color-dark section[data-color="dark"] .swoosh:before {
+    content: "_";
+    color: #E50914;
+}
+
+.color-undefined section[data-color="dark"] .swoosh:before {
+    content: "_";
+    color: #fff;
+}
+
 
 /*# sourceMappingURL=style.css.map */
