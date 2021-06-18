@@ -854,7 +854,30 @@ moe .color-dark .left-side ul li a:hover {
     text-align: center;
 }
 
+.custom-btn-white {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    /* width: 100%;
+    max-width: 250px;
+    margin: 0 auto; */
+}
+
 .custom-btn * {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.custom-btn-white * {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -877,7 +900,26 @@ moe .color-dark .left-side ul li a:hover {
     color: #fff;
 }
 
+.custom-btn-white a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 58px;
+    border: 1px solid #282828;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 30px;
+    padding-top: 18px;
+    background: #fafafa;
+    color: rgb(27, 27, 27);
+}
+
 .custom-btn a:hover {
+    text-decoration: none;
+}
+
+.custom-btn-white a:hover {
     text-decoration: none;
 }
 
@@ -885,6 +927,15 @@ moe .color-dark .left-side ul li a:hover {
     width: 20px;
     height: 1px;
     background: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.custom-btn-white span {
+    width: 20px;
+    height: 1px;
+    background: rgb(29, 29, 29);
     display: inline-block;
     margin-left: 20px;
     margin-top: 8px;
@@ -903,12 +954,34 @@ moe .color-dark .left-side ul li a:hover {
     margin-top: 5px;
 }
 
+.custom-btn-white i {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-color: transparent transparent transparent rgb(24, 24, 24);
+    opacity: 1;
+    margin-top: 5px;
+}
+
 .custom-btn:hover span {
     width: 50px;
     margin-left: 20px;
 }
 
 .custom-btn:hover i {
+    opacity: 0;
+}
+
+.custom-btn-white:hover span {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.custom-btn-white:hover i {
     opacity: 0;
 }
 
@@ -1535,7 +1608,7 @@ body>header>nav>div.phone:after {
     display: flex;
     flex-wrap: wrap;
     padding: 150px 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .main-services .titles {
