@@ -864,6 +864,7 @@ moe .color-dark .left-side ul li a:hover {
     -ms-flex-pack: justify;
     justify-content: space-between;
     text-align: center;
+    align-self: bottom;
     /* width: 100%;
     max-width: 250px;
     margin: 0 auto; */
@@ -1628,6 +1629,7 @@ body>header>nav>div.phone:after {
 
 .main-services article {
     width: 100%;
+    height: 300px;
     float: left;
     margin-bottom: 50px;
     color: #fff;
