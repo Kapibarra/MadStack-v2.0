@@ -854,7 +854,31 @@ moe .color-dark .left-side ul li a:hover {
     text-align: center;
 }
 
+.custom-btn-white {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+    align-self: baseline;
+    /* width: 100%;
+    max-width: 250px;
+    margin: 0 auto; */
+}
+
 .custom-btn * {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.custom-btn-white * {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
@@ -877,7 +901,26 @@ moe .color-dark .left-side ul li a:hover {
     color: #fff;
 }
 
+.custom-btn-white a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 58px;
+    border: 1px solid #282828;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 30px;
+    padding-top: 18px;
+    background: #fafafa;
+    color: rgb(27, 27, 27);
+}
+
 .custom-btn a:hover {
+    text-decoration: none;
+}
+
+.custom-btn-white a:hover {
     text-decoration: none;
 }
 
@@ -885,6 +928,15 @@ moe .color-dark .left-side ul li a:hover {
     width: 20px;
     height: 1px;
     background: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.custom-btn-white span {
+    width: 20px;
+    height: 1px;
+    background: rgb(29, 29, 29);
     display: inline-block;
     margin-left: 20px;
     margin-top: 8px;
@@ -903,12 +955,34 @@ moe .color-dark .left-side ul li a:hover {
     margin-top: 5px;
 }
 
+.custom-btn-white i {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-color: transparent transparent transparent rgb(24, 24, 24);
+    opacity: 1;
+    margin-top: 5px;
+}
+
 .custom-btn:hover span {
     width: 50px;
     margin-left: 20px;
 }
 
 .custom-btn:hover i {
+    opacity: 0;
+}
+
+.custom-btn-white:hover span {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.custom-btn-white:hover i {
     opacity: 0;
 }
 
@@ -1083,13 +1157,13 @@ moe .color-dark .left-side ul li a:hover {
     transition: all 0s ease;
 }
 
-body > header > nav > div.phone:hover:before {
+body>header>nav>div.phone:hover:before {
     width: 100%;
     background: #282828;
     transition: width 0.25s ease;
 }
 
-body > header > nav > div.phone:after {
+body>header>nav>div.phone:after {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
@@ -1535,7 +1609,7 @@ body > header > nav > div.phone:after {
     display: flex;
     flex-wrap: wrap;
     padding: 150px 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .main-services .titles {
@@ -1549,12 +1623,15 @@ body > header > nav > div.phone:after {
 }
 
 .main-services figure img {
-    height: 60px;
+    height: 400px;
     display: inline-block;
 }
 
 .main-services article {
     width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
     float: left;
     margin-bottom: 50px;
     color: #fff;
@@ -1787,6 +1864,16 @@ body > header > nav > div.phone:after {
 .recent-news .row {
     margin-left: -25px;
     margin-right: -25px;
+}
+
+.row-blog {
+    display: block;
+}
+
+.development {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
 }
 
 .recent-news .col-lg-4 {
@@ -3095,9 +3182,114 @@ only screen and (max-device-width: 767px) {
         margin-bottom: 15px;
     }
 }
-.color-undefined .swoosh:before {content: "_";color: #E50914;}
-.left-side .swoosh:before {content: "_";color: #E50914;}
-.color-dark section[data-color="dark"] .swoosh:before {content: "_";color: #E50914;}
-.color-undefined section[data-color="dark"] .swoosh:before {content: "_";color: #fff;}
+
+.color-undefined .swoosh:before {
+    content: "_";
+    color: #E50914;
+}
+
+.left-side .swoosh:before {
+    content: "_";
+    color: #E50914;
+}
+
+.color-dark section[data-color="dark"] .swoosh:before {
+    content: "_";
+    color: #E50914;
+}
+
+.color-undefined section[data-color="dark"] .swoosh:before {
+    content: "_";
+    color: #fff;
+}
+
+
+/* service slider own*/
+
+.container-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sidebar>div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+.main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.main-slide>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: none;
+}
+
+.container-slider .controls button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.container-slider .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.container-slider .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 
 /*# sourceMappingURL=style.css.map */
