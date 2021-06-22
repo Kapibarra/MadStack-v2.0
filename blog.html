@@ -376,26 +376,44 @@ Kiev, Ukraine 78692<br>
                 </div>
                 <div class="modal-body">
                     <form>
-
-                        <div class="modal__img">
+                        <div class="contact-form">
+                            <form id="contact" name="contact" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" autocomplete="off" required>
+                                    <span>Ваше имя</span>
+                                </div>
+                                <!-- end form-group -->
+                                <div class="form-group">
+                                    <input type="text" name="email" id="email" autocomplete="off" required>
+                                    <span>Ваш e-mail</span>
+                                </div>
+                                <!-- end form-group -->
+                                <div class="form-group">
+                                    <input type="text" name="subject" id="subject" autocomplete="off" required>
+                                    <span>Тема</span>
+                                </div>
+                                <!-- end form-group -->
+                                <div class="form-group">
+                                    <textarea name="message" id="message" autocomplete="off" required></textarea>
+                                    <span>Сообщение</span>
+                                </div>
+                                <!-- end form-group -->
+                                <div class="form-group">
+                                    <button id="submit" type="submit" name="submit">
+                                        <strong>Отправить<b></b> <i></i></strong>
+                                    </button>
+                                </div>
+                                <!-- end form-group -->
+                            </form>
+                            <!-- end form -->
+                            <div class="form-group">
+                                <div id="success" class="alert alert-success wow fadeInUp" role="alert"> Ваш запрос получен!Мы свяжемся с вами как можно быстрее. </div>
+                                <!-- end success -->
+                                <div id="error" class="alert alert-danger wow fadeInUp" role="alert"> Ouuupsss. Кажется что-то пошло не так =( </div>
+                                <!-- end error -->
+                            </div>
+                            <!-- end form-group -->
                         </div>
-                        <input type="name" class="form-field modal-form-input" placeholder="Ваше имя">
-                        <input type="email" class="form-field modal-form-input" placeholder="Ваш E-Mail">
-                        <select>
-                                    <option value="">Выберите свой город</option>
-                                    <option value="moscow">Москва</option>
-                                    <option value="saintp">Санкт-Петербург</option>
-                                </select>
-                        <select>
-                                    <option value="">Выберите объем</option>
-                                    <option value="100">до 100 литров</option>
-                                    <option value="300">от 100 до 300 литров</option>
-                                    <option value="500">от 300 до 500 литров</option>
-                                    <option value="700">от 500 до 700 литров</option>
-                                    <option value="1000">от 700 до 1000 литров</option>
-                                </select>
-
-                        <button class="modal-form-button" id="form-btn-id" type="submit" disabled="disabled">Отправить</button>
                         <div class="modal__private-policy">
                             <input type="checkbox" checked id="modal-private" name="private-policy" placeholder="Политика конфиденциальности">
                             <a href="#" class="private-policy">Политика конфиденциальности</a>
