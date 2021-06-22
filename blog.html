@@ -167,7 +167,7 @@ Kiev, Ukraine 78692<br>
                         <p>Landing page</p>
                         <p>E-Commerce</p>
                         <p>Корпоративный сайт</p>
-                        <div class="custom-btn-white"><a href="#">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -177,7 +177,7 @@ Kiev, Ukraine 78692<br>
                     <article>
                         <span>02</span>
                         <h4><span class="swoosh"></span>ДИЗАЙН | КРЕАТИВ</h4>
-                        <div class="custom-btn-white"><a href="#">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -187,7 +187,7 @@ Kiev, Ukraine 78692<br>
                     <article>
                         <span>03</span>
                         <h4><span class="swoosh"></span>БРЕНДИНГ</h4>
-                        <div class="custom-btn-white"><a href="#">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -197,7 +197,7 @@ Kiev, Ukraine 78692<br>
                     <article>
                         <span>04</span>
                         <h4><span class="swoosh"></span>ИНТЕРНЕТ-МАРКЕТИНГ</h4>
-                        <div class="custom-btn-white"><a href="#">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -207,7 +207,7 @@ Kiev, Ukraine 78692<br>
                     <article>
                         <span>05</span>
                         <h4><span class="swoosh"></span>ПОДДЕРЖКА ПРОЕКТОВ</h4>
-                        <div class="custom-btn-white"><a href="#">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -217,7 +217,7 @@ Kiev, Ukraine 78692<br>
                     <article>
                         <span>06</span>
                         <h4><span class="swoosh"></span>АНАЛИТИКА</h4>
-                        <div class="custom-btn-white"><a href="#">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -227,7 +227,7 @@ Kiev, Ukraine 78692<br>
                     <article>
                         <span>07</span>
                         <h4><span class="swoosh"></span>РЕКЛАМА В ИНТЕРНЕТЕ</h4>
-                        <div class="custom-btn-white"><a href="#">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -364,6 +364,51 @@ Kiev, Ukraine 78692<br>
         </div>
         <!-- end container -->
     </footer>
+    <!-- MODAL-->
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Записаться</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="modal__img">
+                        </div>
+                        <input type="name" class="form-field modal-form-input" placeholder="Ваше имя">
+                        <input type="email" class="form-field modal-form-input" placeholder="Ваш E-Mail">
+                        <select>
+                                    <option value="">Выберите свой город</option>
+                                    <option value="moscow">Москва</option>
+                                    <option value="saintp">Санкт-Петербург</option>
+                                </select>
+                        <select>
+                                    <option value="">Выберите объем</option>
+                                    <option value="100">до 100 литров</option>
+                                    <option value="300">от 100 до 300 литров</option>
+                                    <option value="500">от 300 до 500 литров</option>
+                                    <option value="700">от 500 до 700 литров</option>
+                                    <option value="1000">от 700 до 1000 литров</option>
+                                </select>
+
+                        <button class="modal-form-button" id="form-btn-id" type="submit" disabled="disabled">Отправить</button>
+                        <div class="modal__private-policy">
+                            <input type="checkbox" checked id="modal-private" name="private-policy" placeholder="Политика конфиденциальности">
+                            <a href="#" class="private-policy">Политика конфиденциальности</a>
+                        </div>
+                </div>
+                </form>
+                <div class="modal__contacts-item">
+                    <p>Москва <br /> <a href="tel:+1234567890" class="tel">+7 999 999 99 99</a></p>
+                    <p>Санкт-Петербург <br /> <a href="tel:+1234567890" class="tel:+79312622345">+7 931 262-23-45</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end footer -->
     <audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
 
