@@ -3,11 +3,22 @@
 
 <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NXBJM59');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NXBJM59');
+    </script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -52,7 +63,7 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXBJM59"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXBJM59"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="preloader">
@@ -210,7 +221,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="titles">
-                        <h2>НАШИ УСЛУГИ</h2>
+                        <h2><span class="swoosh"></span>НАШИ УСЛУГИ</h2>
                         <p>Мы постоянно совершенствуем наш продукт. Добавляем новые функции. Работаем, чтобы ваш бизнес рос.</p>
                     </div>
                     <!-- end titles -->
@@ -222,7 +233,7 @@
                     <article>
                         <span>01</span>
                         <h4><span class="swoosh"></span>РАЗРАБОТКА САЙТОВ</h4>
-                        <div class="custom-btn-white"><a href="#" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
+                        <div class="custom-btn-white"><a href="" data-toggle="modal" data-target="#smallModal">Все кейсы<span></span> <i></i></a></div>
                     </article>
                 </div>
                 <!-- end col-3 -->
@@ -500,6 +511,57 @@
         </div>
         <!-- end container -->
     </footer>
+    <!-- MODAL-->
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Записаться</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="contact-form">
+                            <form id="contact" name="contact" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" autocomplete="off" required>
+                                    <span>Ваше имя</span>
+                                </div>
+                                <!-- end form-group -->
+                                <div class="form-group">
+                                    <input type="text" name="email" id="email" autocomplete="off" required>
+                                    <span>Ваш e-mail</span>
+                                </div>
+                                <!-- end form-group -->
+                                <!-- end form-group -->
+                                <div class="form-group">
+                                    <textarea name="message" id="message" autocomplete="off" required></textarea>
+                                    <span>Сообщение</span>
+                                </div>
+                                <!-- end form-group -->
+                                <div class="form-group">
+                                    <button id="submit" type="submit" name="submit">
+                                        <strong>Отправить<b></b> <i></i></strong>
+                                    </button>
+                                </div>
+                                <!-- end form-group -->
+                            </form>
+                            <!-- end form-group -->
+                        </div>
+                        <div class="modal__private-policy">
+                            <input type="checkbox" checked id="modal-private" name="private-policy" placeholder="Политика конфиденциальности">
+                            <a href="#" class="private-policy">Политика конфиденциальности</a>
+                        </div>
+                </div>
+                </form>
+                <div class="modal__contacts-item">
+                    <p>Телефон: <br /> <a href="tel:+1234567890" class="tel">+7 999 999 99 99</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end footer -->
     <audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
 
