@@ -3357,3 +3357,8 @@ button:focus {
 .private-policy {
     font-size: 12px;
 }
+
+.banner-price {
+    font-size: 62px;
+    color: #E50914;
+}
