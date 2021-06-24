@@ -2,6 +2,8 @@
 
 /* CUSTOM FONTS */
 
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Staatliches&display=swap');
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.ttf");
@@ -3360,6 +3362,7 @@ button:focus {
 
 .banner-price {
     font-size: 62px;
+    font-family: 'Montserrat';
     color: #E50914;
 }
 
