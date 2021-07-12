@@ -3379,3 +3379,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     outline: none;
 }
+
+.whyus-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
